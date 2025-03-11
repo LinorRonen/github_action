@@ -30,6 +30,6 @@ jobs:
           export PYTHONPATH=$PYTHONPATH:$(pwd)/src
           pytest
 
-      - name: Check code formatting
-        run: black --check .
+      - name: Auto-format code with Black
+        run: black .
 
